@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1>Aplikasi Ubah Warna</h1>
+
+
+    <label>Warna background</label>
+    <input type="color" id="bg-color"/>
+
+
+</br>
+
+<label>warna text</label>
+<input type="color" id="text-color"/>
+ 
+<script>
+    let bgcolor= document.getElementById("bg-color");
+    let textcolor= document.getElementById("text-color");
+
+    bgcolor.addEventListener("change", (event)=>{
+        document.body.style.backgroundColor= bgcolor.value;
+    });
+    textcolor.addEventListener("change", (event)=>{
+        document.body.style.color= textcolor.value;
+    });
+</script>
+</body>
+</html>

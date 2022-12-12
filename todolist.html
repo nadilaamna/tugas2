@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .container{
+        margin: auto;
+        width: 1200px;
+    }
+
+    .form{
+        height: 100px;
+        background-color: beige;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .input{
+        background-color: black;
+    }
+
+    h1{
+        text-align: center;
+        background-color: bisque;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, black;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>TO DO LIST</h1>
+    <div class="form">
+        <input type="text" class="myinput">
+        <button id="mysumbit">add</button>
+    </div>
+    <div id="lists"></div>
+</div>
+
+<script>
+    document.querySelector('#mysumbit').onclick = function(){
+        if(document.querySelector('#myinput').value.length == 0){
+
+            alert('yaudah ga bisa');
+        }else{
+            document.querySelector('#lists').innerHTML += `
+            <div class="task">
+                <span id ="taskname">
+                    ${document.querySelector('#myinput').value}
+                    </span>
+                    <button class="delete">
+                        <i class="far fa-trash-alt"><i>
+                        </button>
+                        </div>
+                        `;
+        }
+    }
+</script>
+    
+</body>
+</html>

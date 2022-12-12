@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="myFunction()">Klik</button>
+    <script>
+
+        var Alert= prompt("HAI");
+        document.write(`<p> ${Alert}</p>`);
+        
+        const nama=prompt("Siapa Nama Kamu?");
+        document.write(`<p> Nama : ${nama}</p>`);
+
+        const alamat=prompt("Alamat?");
+        document.write(`<p>Alamat : ${alamat}</p>`);
+
+        const sekolah=prompt("Sekolah?");
+        document.write(`<p>Sekolah : ${sekolah}</p>`);
+
+        var kelas=prompt("Kelas?");
+        document.write(`<p>Kelas : ${kelas}</p>`);
+
+        var kelompok=[nama,alamat,sekolah,kelas];
+
+        console.log("Nama :", nama);
+        console.log("alamat :", alamat);
+        console.log("Sekolah :", sekolah);
+        console.log("Kelas :", kelas);
+
+        function myFunction(){
+            alert(kelompok);
+        }
+
+        
+    </script>
+</body>
+</html>

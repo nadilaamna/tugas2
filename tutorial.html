@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial</title>
+</head>
+<body>
+    <div id="app"></div>
+
+    <p class="tes">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores enim nam accusamus dignissimos, iure incidunt. Magnam iste ducimus, in id laborum dolore praesentium deserunt aliquam dolor debitis officiis voluptas quam?
+    </p>
+    <p class="tes">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quaerat iste consequatur perferendis magni, repellat at itaque provident expedita voluptatem deleniti culpa veniam consectetur velit excepturi a molestiae optio deserunt?
+    </p>
+
+    <p class="tes">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quaerat iste consequatur perferendis magni, repellat at itaque provident expedita voluptatem deleniti culpa veniam consectetur velit excepturi a molestiae optio deserunt?
+    </p>
+
+     <h1 id="Judul">Hapus Saya!</h1> 
+    
+<script>
+    let tutorial = document.getElementById("app");
+    let nameclass = document.getElementsByClassName("tes");
+    tutorial.innerText = "NADILA";
+    tutorial.style.backgroundColor="grey";
+    tutorial.style.textAlign= "center";
+    tutorial.style.padding="20px";
+
+    
+    console.log("nameclass :", nameclass);
+    setInterval(function(){
+    nameclass[0].style.color="red";
+    nameclass[1].style.color="green";
+    nameclass[2].style.color="yellow";
+
+    setTimeout(function(){
+    nameclass[0].style.color="black";
+    nameclass[1].style.color="black";
+    nameclass[2 ].style.color="black";
+    }, 300);
+    }, 700);
+   
+    
+    let hapus=document.getElementById("Judul");
+    hapus.remove();
+</script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .container{
+            width: 440px;
+            height: 690px;
+            background-color:black;
+            margin: auto;
+            border-radius: 10px;
+        }
+
+        .calculator{
+            position: relative;
+            top: 15px;
+            margin-left: 6px;
+            margin-right: 6px;
+        }
+
+        /* .userInput{ 
+            position: relative;
+            margin-bottom: 20px;
+            height: 80px;
+            max-width: 100%;
+            text-align: right;
+            padding: 10px;
+            font-size: 25px;
+            background-color: white;
+            border-radius: 15px;
+        } */
+
+        .calButtons{
+            flex-wrap: wrap;
+        }
+
+        button{
+            text-align: center;
+            justify-content: center;
+            height: 100px;
+            width: 100px;
+            margin: 2px;
+            font-size: 30px;
+           font-weight: 600;
+            border-radius: 20px; 
+        }
+        .operator:hover{
+            background-color: white;
+        }
+
+        .operator{
+            background-color: rgb(130, 120, 118);
+        }
+
+        .number{
+            background-color: rgb(130, 120, 118);
+        }
+        .number:hover{
+            background-color: white;
+            cursor: pointer;
+        }
+
+        .calButtons > button:nth-child(18){
+            background-color:rgb(187, 185, 183);
+            width: 310px;
+            margin-left: 5px;
+        }
+        input{
+            height: 100px;
+            width: 100%;
+            margin-bottom: 40px;
+            border-radius: 15px;
+            text-align: right;
+            font-size: 50px;
+        }
+
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+       
+        <input type="text" id="layar">   
+        
+        <div class="calButtons">
+
+            <button id="AC">AC</button>
+            <button id="DEL">DEL</button>
+            <button class="operator" id="kurang">-</button>
+            <button class="operator" id="kali">*</button>
+
+            <button class="number" id="1">1</button>
+            <button class="number" id="2">2</button>
+            <button class="number" id="3">3</button>
+            <button class="number" id="tambah">+</button>
+            
+            <button class="number" id="4">4</button>
+            <button class="number" id="5">5</button>
+            <button class="number" id="6">6</button>
+            <button class="number" id="bagi">/</button>
+
+            <button class="number" id="7">7</button>
+            <button class="number" id="8">8</button>
+            <button class="number" id="9">9</button>
+
+            <button class="number" id="kosong">0</button>
+            <button class="number" id="titik">.</button>
+            <button class="number" id="samadengan">=</button>
+        </div>
+    </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>

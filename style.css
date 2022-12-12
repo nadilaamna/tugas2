@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-image: url(bg1.jpg);
+    width: 1000px;
+    margin: auto;
+    height: 880px;
+}
+
+.header{
+    background-color: black;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h1{
+    text-align: center;
+    color: white;
+}
+
+.hero{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 150px;
+   
+}
+
+.user button {
+    margin-top: 30px;
+   border-radius: 100px;
+   border: 2px solid;
+}
+
+.user h1{
+    text-align: center;
+    color: white;
+    border-bottom: 1px solid;
+}
+
+.komputer button{
+    margin-top: 30px;
+    border-radius: 100px;
+    border: 2px solid;
+}
+
+.komputer h1{
+    color: white;
+    text-align: center;
+    border-bottom: 1px solid;
+}
+
+.vs{
+    margin-top: 190px;
+}
